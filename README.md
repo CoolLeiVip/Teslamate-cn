@@ -1,6 +1,6 @@
 # TeslaMate Custom Grafana Dashboards
 
-### Last release: [v2025.8.31](https://github.com/jheredianet/Teslamate-CustomGrafanaDashboards/releases/)
+### Last release: [v2025.8.31](https://github.com/jheredianet/Teslamate-cn/releases/)
 
 <!-- PROJECT SHIELDS -->
 <!--
@@ -34,7 +34,7 @@ In order to auto-import all the dashboard files from this repository, considerin
 - The following command will clone the source files from this repository. This should be run in an appropriate directory within which you would like to keep it. You should also record this path and provide it later in the following steps. To keep it easy, you may run this your home path (~/) or modify it accordingly.
 
 ```bash
-git clone https://github.com/jheredianet/Teslamate-CustomGrafanaDashboards.git
+git clone https://github.com/jheredianet/Teslamate-cn.git
 ```
 
 - Edit your Teslamate "docker-compose.yml" file and add these two new lines at the end of the "volumes" section of the grafana container
@@ -48,8 +48,8 @@ services:
     ...
     volumes:
       - teslamate-grafana-data:/var/lib/grafana
-      - ~/Teslamate-CustomGrafanaDashboards/customdashboards.yml:/etc/grafana/provisioning/dashboards/customdashboards.yml
-      - ~/Teslamate-CustomGrafanaDashboards/dashboards:/TeslamateCustomDashboards
+      - ~/Teslamate-cn/customdashboards.yml:/etc/grafana/provisioning/dashboards/customdashboards.yml
+      - ~/Teslamate-cn/dashboards:/TeslamateCustomDashboards
 ```
 
 - Save your file and then **recreate** Grafana container (docker-compose up -d)
@@ -68,8 +68,8 @@ services:
     ...
     volumes:
       - teslamate-grafana-data:/var/lib/grafana
-      - /some/path/Teslamate-CustomGrafanaDashboards/customdashboards.yml:/etc/grafana/provisioning/dashboards/customdashboards.yml
-      - /some/path/Teslamate-CustomGrafanaDashboards/dashboards:/TeslamateCustomDashboards
+      - /some/path/Teslamate-cn/customdashboards.yml:/etc/grafana/provisioning/dashboards/customdashboards.yml
+      - /some/path/Teslamate-cn/dashboards:/TeslamateCustomDashboards
 ```
 
 ## How to update the Dashboards
@@ -79,7 +79,7 @@ If you want to be sure that you are using the latest version of the Dashboards:
 - Pull again from the repository
 
 ```bash
-git -C ~/Teslamate-CustomGrafanaDashboards pull
+git -C ~/Teslamate-cn pull
 ```
 
 - Then **restart** Grafana container
@@ -291,7 +291,7 @@ Do not take the dashboards much less upload or merge them to other repositories 
 ## Credits
 
 - Author: [Juan Carlos Heredia](https://infoinnova.net/contacto/)
-- Based on/forked from [Adrian Kumpf](https://github.com/adriankumpf/teslamate) original code, with improvement of custom Grafana Dashboards (see [contributions history](https://github.com/jheredianet/Teslamate-CustomGrafanaDashboards/graphs/contributors)).
+- Based on/forked from [Adrian Kumpf](https://github.com/adriankumpf/teslamate) original code, with improvement of custom Grafana Dashboards (see [contributions history](https://github.com/jheredianet/Teslamate-cn/graphs/contributors)).
 
 ## License
 
@@ -299,15 +299,15 @@ Licensed under the [MIT license][license-url].
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/jheredianet/Teslamate-CustomGrafanaDashboards.svg?style=for-the-badge
-[contributors-url]: https://github.com/jheredianet/Teslamate-CustomGrafanaDashboards/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/jheredianet/Teslamate-CustomGrafanaDashboards.svg?style=for-the-badge
-[forks-url]: https://github.com/jheredianet/Teslamate-CustomGrafanaDashboards/network/members
-[stars-shield]: https://img.shields.io/github/stars/jheredianet/Teslamate-CustomGrafanaDashboards.svg?style=for-the-badge
-[stars-url]: https://github.com/jheredianet/Teslamate-CustomGrafanaDashboards/stargazers
-[issues-shield]: https://img.shields.io/github/issues/jheredianet/Teslamate-CustomGrafanaDashboards.svg?style=for-the-badge
-[issues-url]: https://github.com/jheredianet/Teslamate-CustomGrafanaDashboards/issues
-[discussions-shield]: https://img.shields.io/github/discussions/jheredianet/Teslamate-CustomGrafanaDashboards.svg?style=for-the-badge
-[discussions-url]: https://github.com/jheredianet/Teslamate-CustomGrafanaDashboards/discussions
-[license-shield]: https://img.shields.io/github/license/jheredianet/Teslamate-CustomGrafanaDashboards.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/jheredianet/Teslamate-cn.svg?style=for-the-badge
+[contributors-url]: https://github.com/jheredianet/Teslamate-cn/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/jheredianet/Teslamate-cn.svg?style=for-the-badge
+[forks-url]: https://github.com/jheredianet/Teslamate-cn/network/members
+[stars-shield]: https://img.shields.io/github/stars/jheredianet/Teslamate-cn.svg?style=for-the-badge
+[stars-url]: https://github.com/jheredianet/Teslamate-cn/stargazers
+[issues-shield]: https://img.shields.io/github/issues/jheredianet/Teslamate-cn.svg?style=for-the-badge
+[issues-url]: https://github.com/jheredianet/Teslamate-cn/issues
+[discussions-shield]: https://img.shields.io/github/discussions/jheredianet/Teslamate-cn.svg?style=for-the-badge
+[discussions-url]: https://github.com/jheredianet/Teslamate-cn/discussions
+[license-shield]: https://img.shields.io/github/license/jheredianet/Teslamate-cn.svg?style=for-the-badge
 [license-url]: ./LICENSE
