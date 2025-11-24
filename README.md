@@ -1,4 +1,4 @@
-# TeslaMate Custom Grafana Dashboards
+# 根据大佬的配置文件自己改了的汉化版本的Teslamate面板文件
 
 ### Last release: [v2025.8.31](https://github.com/jheredianet/Teslamate-cn/releases/)
 
@@ -311,4 +311,5 @@ Licensed under the [MIT license][license-url].
 [discussions-url]: https://github.com/jheredianet/Teslamate-cn/discussions
 [license-shield]: https://img.shields.io/github/license/jheredianet/Teslamate-cn.svg?style=for-the-badge
 [license-url]: ./LICENSE
+
 
