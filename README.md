@@ -48,8 +48,8 @@ services:
     ...
     volumes:
       - teslamate-grafana-data:/var/lib/grafana
-      - ~/Teslamate-cn/customdashboards.yml:/etc/grafana/provisioning/dashboards/customdashboards.yml
-      - ~/Teslamate-cn/dashboards:/TeslamateCustomDashboards
+      - ~/Teslamate-cn/cn-dashboards.yml:/etc/grafana/provisioning/dashboards/cn-dashboards.yml
+      - ~/Teslamate-cn/dashboards:/Teslamatecn
 ```
 
 - Save your file and then **recreate** Grafana container (docker-compose up -d)
@@ -68,8 +68,8 @@ services:
     ...
     volumes:
       - teslamate-grafana-data:/var/lib/grafana
-      - /some/path/Teslamate-cn/customdashboards.yml:/etc/grafana/provisioning/dashboards/customdashboards.yml
-      - /some/path/Teslamate-cn/dashboards:/TeslamateCustomDashboards
+      - /some/path/Teslamate-cn/cn-dashboards.yml:/etc/grafana/provisioning/dashboards/cn-dashboards.yml
+      - /some/path/Teslamate-cn/dashboards:/Teslamatecn
 ```
 
 ## How to update the Dashboards
@@ -311,3 +311,4 @@ Licensed under the [MIT license][license-url].
 [discussions-url]: https://github.com/jheredianet/Teslamate-cn/discussions
 [license-shield]: https://img.shields.io/github/license/jheredianet/Teslamate-cn.svg?style=for-the-badge
 [license-url]: ./LICENSE
+
